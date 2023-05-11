@@ -5,10 +5,10 @@ This Python script integrates Google Gmail API and a Machine Learning model for 
 
 Before running this script, ensure that the 'spam_detection.h5' (the machine learning model file) and 'tokenizer.pickle' (the text tokenizer file) are in the same directory as the script.
 
-  1  Go to your Google Cloud Console and create a new project.
-  2 Enable the Gmail API for that project.
-  3  Download the JSON credentials file and rename it to 'credentials.json', then place it in the same directory as the script.
-  4  Run the script. On the first run, it will open a new browser window asking you to authorize the script to access your Gmail account. Once authorized, it will create a 'token.pickle' file to remember the  authorization for future runs.
+  *  Go to your Google Cloud Console and create a new project.
+  * Enable the Gmail API for that project.
+  *  Download the JSON credentials file and rename it to 'credentials.json', then place it in the same directory as the script.
+  *  Run the script. On the first run, it will open a new browser window asking you to authorize the script to access your Gmail account. Once authorized, it will create a 'token.pickle' file to remember the  authorization for future runs.
   
   The script will then fetch the latest 10 messages from your Gmail account, translate them into English if necessary, and use the machine learning model to predict if each message is spam or not.
 
