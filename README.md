@@ -13,12 +13,12 @@ Before running this script, ensure that the 'spam_detection.h5' (the machine lea
   The script will then fetch the latest 10 messages from your Gmail account, translate them into English if necessary, and use the machine learning model to predict if each message is spam or not.
 
 The output will be printed in the console in the following format:
-```Title: {subject of the message}
-Message: This is probably spam. (or) This is probably not spam.```
+`Title: {subject of the message}
+Message: This is probably spam. (or) This is probably not spam.`
 
 If there is no text found in a message, it will print:
-```Title: {subject of the message}
-Message: Text didn't found```
+`Title: {subject of the message}
+Message: Text didn't found`
 
 # Script Details
 The script uses the Gmail API to access the Gmail messages, BeautifulSoup to parse the email bodies, and the Translate library to translate non-English emails into English.
