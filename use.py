@@ -104,8 +104,3 @@ for message in messages:
             print(f"Title: {subject}\nMessage: This is probably not spam.\n")
     else:
         print(f"Title: {subject}\nMessage: Text didnt found\n")
-
-
-
-
-
