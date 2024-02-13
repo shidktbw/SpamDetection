@@ -21,7 +21,7 @@ padded = pad_sequences(sequences, padding='post')
 
 df['v1'] = df['v1'].map({'ham': 0, 'spam': 1}) 
 
-X_train, X_test, y_train, y_test = train_test_split(padded, df['v1'], test_size=0.2, random_state=42) # change 'label' to 'v1'
+X_train, X_test, y_train, y_test = train_test_split(padded, df['v1'], test_size=0.2, random_state=42) 
 
 model = Sequential()
 model.add(Embedding(input_dim=10000, output_dim=32))
